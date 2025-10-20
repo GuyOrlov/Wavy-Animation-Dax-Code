@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wavy – Fire (No Title)</title>
+  <style>
+    :root {
+      --bg1: #200000;
+      --bg2: #ff6600;
+      --centre-dark: #000000;
+      --shadow: rgba(0,0,0,0.7);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body, html { height: 100%; }
+    .stage {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: centre;
+      align-items: centre;
+      background: radial-gradient(circle at centre, var(--centre-dark) 25%, #ff4500 100%);
+    }
+    .wave {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--bg1), var(--bg2));
+      box-shadow: inset 0 0 80px var(--shadow);
+    }
+    .wave span {
+      position: absolute;
+      width: 325vh;
+      height: 325vh;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -75%);
+      will-change: transform;
+    }
+    .wave span:nth-child(1) {
+      border-radius: 45%;
+      background: rgba(0,0,0,0.9);
+      animation: spin1 5s linear infinite;
+    }
+    .wave span:nth-child(2) {
+      border-radius: 40%;
+      background: rgba(255,60,0,0.5);
+      animation: spin2 10s linear infinite;
+    }
+    .wave span:nth-child(3) {
+      border-radius: 42.5%;
+      background: rgba(255,20,0,0.4);
+      animation: spin3 15s linear infinite;
+    }
+    @keyframes spin1 {
+      0% { transform: translate(-50%, -75%) rotate(0deg); }
+      100% { transform: translate(-50%, -75%) rotate(360deg); }
+    }
+    @keyframes spin2 {
+      0% { transform: translate(-50%, -75%) rotate(0deg); }
+      100% { transform: translate(-50%, -75%) rotate(360deg); }
+    }
+    @keyframes spin3 {
+      0% { transform: translate(-50%, -75%) rotate(0deg); }
+      100% { transform: translate(-50%, -75%) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="stage" aria-hidden="true">
+    <div class="wave">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</body>
+</html>

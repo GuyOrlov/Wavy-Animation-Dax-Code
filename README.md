@@ -1,37 +1,43 @@
-# Power BI Wavy Animation Backgrounds (No Title)
+# 🌊 Power BI Wavy Animation Backgrounds (No Title)
 
-Two lightweight, CSS-only animated backgrounds for use in Power BI **HTML Viewer** visuals (no JavaScript).  
-- **Dark Blue** – deep ocean vibe with a dark centre glow  
-- **Fire** – warm orange/red gradient with a dark centre glow  
-Both are **title-free** so they can sit behind other visuals or act as transition screens.
+Two CSS-only, title-free background animations for Power BI **HTML Viewer** visuals or standalone HTML use.  
+Each creates smooth, rotating “liquid-wave” effects for transitions or splash pages.
 
-## Preview
-Open the static HTML files in a browser:
-- `wavy-dark-blue.html`
-- `wavy-fire.html`
+- **Dark Blue Version** – ocean tones, dark centre glow  
+- **Fire Version** – warm red/orange tones, dark centre glow  
 
-## Use in Power BI
-1. Import an **HTML Viewer** custom visual (e.g., “HTML Content”).
-2. Create a **Measure** and paste one of the DAX snippets:
+Both are JavaScript-free and run entirely with CSS keyframes.
+
+---
+
+## 🧩 How to Use in Power BI
+1. Import an **HTML Viewer** visual (e.g. “HTML Content”).
+2. Create a new **measure** and paste one of the DAX snippets:
    - `WavyBlueDark`
    - `WavyFireDark`
-3. Bind the measure to the visual.
+3. Place the visual and bind the measure.
+4. Resize to full-page for the best immersive effect.
 
-> Notes  
-> - These animations are pure CSS.  
-> - No external fonts or scripts required.  
-> - Uses large rotating, rounded shapes to create a smooth “wavy” effect.
+---
 
-## Files
-- `wavy-dark-blue.html` — Standalone HTML (dark blue)
-- `wavy-fire.html` — Standalone HTML (fire)
-- DAX snippets in this README for Power BI usage
+## 🗂 Files Included
+| File | Description |
+|------|--------------|
+| `wavy-dark-blue.html` | Stand-alone HTML (dark blue tones) |
+| `wavy-fire.html` | Stand-alone HTML (fire tones) |
+| DAX snippets | For Power BI embedding |
 
-## Attribution / Source
-This work is an adaptation of a **user-supplied CSS snippet** (inline wave animation with rotating rounded spans).  
-The approach (rotating border-radius blobs over a gradient) is a common CSS technique used across many demos.  
-If you reuse or remix, please credit:  
-**“Based on CSS provided by Guy Orlov (project adaptation).”**
+---
 
-## License
-MIT — do what you like, just keep a credit note if you share publicly.
+## ✨ Attribution
+Inspired by the CodePen **[“Wavy Animation” by Porsake](https://codepen.io/porsake/pen/JjydjLz)**.  
+Adapted and restyled for Power BI and GitHub by **Guy Orlov**.  
+
+> The concept uses rotating rounded shapes (`border-radius`) over layered gradients to simulate wave motion.  
+> This adaptation adds dark-centre gradients and simplified inline CSS for Power BI HTML rendering.
+
+---
+
+## 📜 Licence
+MIT Licence — you’re free to reuse, modify, and distribute with credit.  
+Please keep the attribution line to **Porsake (original idea)** and **Guy Orlov (adaptation)**.
